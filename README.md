@@ -13,9 +13,7 @@ Advanced Data Analytics project for the Infotact Technical Internship Program, f
 - [x] **Day 2: Deduplication & Missing Value Resolution** (June 14)
   - Successfully dropped 200 duplicate rows caused by logging glitches.
   - Preserved critical traffic metrics by filling 107 missing `utm_source` null fields with `Organic`.
-- [ ] **Day 3: Datetime Standardization & Timezone Unification** (June 15) - *Pending*
-- [ ] **Day 4: Final Pipeline Export & Insights Summary** (June 16) - *Pending*
-
+  
 
 ## 🛠️ Tech Stack & Tools Used
 * **Language:** Python 3
