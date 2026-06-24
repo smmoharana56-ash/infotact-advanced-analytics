@@ -1,0 +1,41 @@
+-- Drop the old table to eliminate previous configuration errors
+DROP TABLE IF EXISTS marketing_logs;
+
+-- Create the table structure to match your fresh CSV perfectly
+CREATE TABLE marketing_logs (
+    row_index VARCHAR(100),
+    clean_timestamp VARCHAR(100),
+    utm_source VARCHAR(100),
+    clicks VARCHAR(100),
+    conversions VARCHAR(100),
+    alt_timestamp VARCHAR(100),
+    clean_date VARCHAR(100),
+    extra_flag VARCHAR(100)
+);
+
+SELECT COUNT(*) FROM marketing_logs;
+
+SELECT 
+    row_index AS user_id,
+    utm_source,
+    clean_timestamp,
+    clicks::INT,
+    conversions::INT,
+    ROW_NUMBER() OVER(
+        PARTITION BY row_index 
+        ORDER BY clean_timestamp ASC
+    ) AS touchpoint_sequence
+FROM marketing_logs;
+
+
+
+WITH sequenced_clicks AS (
+    SELECT row_index, utm_source, conversions::INT AS conversions,
+           ROW_NUMBER() OVER(PARTITION BY row_index ORDER BY clean_timestamp ASC) AS sequence
+    FROM marketing_logs
+)
+SELECT utm_source, SUM(conversions) AS first_touch_conversions
+FROM sequenced_clicks
+WHERE sequence = 1
+GROUP BY utm_source
+ORDER BY first_touch_conversions DESC;
