@@ -34,7 +34,44 @@ This project establishes an automated data cleaning, engineering, and aggregatio
 * **Day 6: Efficiency Feature Calculation**
     * Engineered the relative efficiency metric: **Click-Through Conversion Rate (CTCR)**.
     * Normalized absolute counts into an actionable percentage index to accurately track marketing return on investment (ROI).
+---
 
+## 📈 Phase 2: Database Integration & Attribution Modeling (Days 7 - 12)
+
+### Day 7 & 8: Data Imputation & Standardization
+* Resolved structural anomalies and handled missing values across user tracking records.
+* Optimized data features using Python (`pandas`) to prepare variables for high-performance indexing.
+
+### Day 9 & 10: Datatype Synchronization & Staging
+* Converted interaction flags and synchronized timestamp columns into time-zone-aware formats.
+* Conducted data validation checks to ensure clean structural boundaries, exporting a stable 2,300-row master file (`fresh_marketing_logs.csv`).
+
+### Day 11: PostgreSQL Database Migration
+* Established a local production database instance (`infotact_marketing`) in PostgreSQL.
+* Engineered a text-safe staging schema layout to seamlessly ingest external records and eliminate application permission conflicts.
+* Verified successful database migration with a verified baseline count of **2,300 live rows**.
+
+### Day 12: Advanced SQL Analytics & Model Execution
+* **User Journey Mapping:** Wrote raw SQL window functions utilizing `ROW_NUMBER() OVER (PARTITION BY row_index ORDER BY clean_timestamp ASC)` to chronologically sequence customer multi-touch journeys.
+* **Attribution Engineering:** Structured Common Table Expressions (CTEs) to isolate the definitive first conversion touchpoint.
+* **Results Export:** Successfully pulled verified performance metrics into `attribution_results.csv`, revealing **Google (217 conversions)** and **Meta (180 conversions)** as the primary acquisition drivers.
+
+---
+
+## 📊 Mid-Review Analytics Summary (First-Touch Attribution)
+The final production metrics extracted directly from our local PostgreSQL server are documented below:
+
+| Marketing Channel (utm_source) | First-Touch Conversions |
+| :--- | :--- |
+| **Google** | 217 |
+| **Meta** | 180 |
+| **YouTube** | 99 |
+| **LinkedIn** | 72 |
+| **Newsletter** | 72 |
+| **Organic** | 29 |
+
+---
+*Status: Week 2 Requirements Completed Successfully. Repository locked and finalized for Review Panel evaluation.*
 ---
 
 ## 📐 Data Transformation & Logic Formulas
