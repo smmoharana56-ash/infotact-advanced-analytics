@@ -71,9 +71,13 @@ The final production metrics extracted directly from our local PostgreSQL server
 | **Organic** | 29 |
 
 ---
-*Status: Week 2 Requirements Completed Successfully. Repository locked and finalized for Review Panel evaluation.*
+week3 :-
 ---
-
+### Day 13: Star Schema Data Warehouse Modeling
+* **Database Optimization:** Transitioned the project from a single flat table architecture into an optimized relational Star Schema data warehouse layout inside PostgreSQL.
+* **Dimension Table:** Created and populated `dim_channels` as a standalone look-up dimension table to map distinct user acquisition tracking sources (`utm_source`) with clean, indexed primary keys.
+* **Fact Table:** Engineered and structured the central `fact_marketing_performance` table, establishing formal foreign key constraints linking back to the channel dimension table.
+* **Metric Engineering:** Formulated and injected advanced transactional logic inside the SQL insertion script to calculate key marketing tracking parameters (`calculated_spend` and `calculated_revenue`) derived from industry-standard CPC and Average Order Value (AOV) platform benchmarks.
 ## 📐 Data Transformation & Logic Formulas
 
 ### 1. Missing Value Imputation
