@@ -82,6 +82,13 @@ week3 :-
 * **KPI Calculations:** Engineered SQL aggregation queries to calculate high-level business logic metrics: Total Spend, Cost Per Click (CPC), Customer Acquisition Cost (CAC), and Return on Ad Spend (ROAS).
 * **Channel Performance Evaluation:** Evaluated efficiency across all marketing channels, identifying high-yield and low-performing conversion tracks.
 * **BI Staging:** Extracted the core summary findings into `kpi_metrics_summary.csv`, successfully finalizing the data modeling phase of Week 3.
+* ## Phase 4: BI Dashboarding & Executive Reporting
+
+### Day 15: BI Workspace Configuration & Asset Staging
+* **Environment Deployed:** Successfully launched and configured the local data engineering workspace using Power BI Desktop.
+* **Data Connection:** Ingested the custom data assets `kpi_metrics_summary.csv` and `fresh_marketing_logs.csv` into the local business intelligence data model framework.
+* **Data Profiling:** Executed structural typecasting and data schema validations across critical performance variables, establishing clean currency formatting limits for metrics like Spend, Revenue, CPC, and CAC.
+  
 ## 📐 Data Transformation & Logic Formulas
 
 ### 1. Missing Value Imputation
