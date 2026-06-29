@@ -88,7 +88,10 @@ week3 :-
 * **Environment Deployed:** Successfully launched and configured the local data engineering workspace using Power BI Desktop.
 * **Data Connection:** Ingested the custom data assets `kpi_metrics_summary.csv` and `fresh_marketing_logs.csv` into the local business intelligence data model framework.
 * **Data Profiling:** Executed structural typecasting and data schema validations across critical performance variables, establishing clean currency formatting limits for metrics like Spend, Revenue, CPC, and CAC.
-  
+### Day 16: Behavioral Funnel Visual Engineering
+* **Funnel Construction:** Built an interactive Conversion Funnel chart to track conversion volume distributions across the user acquisition pipeline.
+* **Channel Drop-off Auditing:** Segmented granular user conversion actions against main marketing traffic sources to visually identify leakages in acquisition tracks.
+* **UI/UX Optimization:** Formatted professional typography and applied clear data label values to streamline multi-channel efficiency metrics for executive reporting.  
 ## 📐 Data Transformation & Logic Formulas
 
 ### 1. Missing Value Imputation
