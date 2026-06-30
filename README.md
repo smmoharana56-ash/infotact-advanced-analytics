@@ -91,7 +91,11 @@ week3 :-
 ### Day 16: Behavioral Funnel Visual Engineering
 * **Funnel Construction:** Built an interactive Conversion Funnel chart to track conversion volume distributions across the user acquisition pipeline.
 * **Channel Drop-off Auditing:** Segmented granular user conversion actions against main marketing traffic sources to visually identify leakages in acquisition tracks.
-* **UI/UX Optimization:** Formatted professional typography and applied clear data label values to streamline multi-channel efficiency metrics for executive reporting.  
+* **UI/UX Optimization:** Formatted professional typography and applied clear data label values to streamline multi-channel efficiency metrics for executive reporting.
+### Day 17: ROI & ROAS Scatter Plot Modeling
+* **Matrix Development:** Deployed an interactive Marketing Efficiency Scatter Plot utilizing the aggregated channel KPIs.
+* **Bivariate Analysis:** Plotted Total Spend against Return on Ad Spend (ROAS) to categorize high-yield channels versus high-cost leakages.
+* **Data Visualization Optimization:** Enabled persistent category overlays to map explicit traffic origins clearly across the performance grid.    
 ## 📐 Data Transformation & Logic Formulas
 
 ### 1. Missing Value Imputation
