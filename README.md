@@ -95,7 +95,13 @@ week3 :-
 ### Day 17: ROI & ROAS Scatter Plot Modeling
 * **Matrix Development:** Deployed an interactive Marketing Efficiency Scatter Plot utilizing the aggregated channel KPIs.
 * **Bivariate Analysis:** Plotted Total Spend against Return on Ad Spend (ROAS) to categorize high-yield channels versus high-cost leakages.
-* **Data Visualization Optimization:** Enabled persistent category overlays to map explicit traffic origins clearly across the performance grid.    
+* **Data Visualization Optimization:** Enabled persistent category overlays to map explicit traffic origins clearly across the performance grid.
+
+### Day 18: Channel Performance Revenue Bar Chart
+* **Visual Deployment:** Built an interactive revenue contribution bar chart ranking top-line performance across all marketing paths.
+* **Executive Reporting Polish:** Enabled precise data label values and custom corporate titles to ensure presentation-ready clarity.
+* **Dashboard Architecture:** Finalized the core tripartite visual layout (Funnel, Scatter Plot, and Revenue Bar Chart) for Phase 4 executive tracking.
+  
 ## 📐 Data Transformation & Logic Formulas
 
 ### 1. Missing Value Imputation
